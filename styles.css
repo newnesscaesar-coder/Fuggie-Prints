@@ -64,8 +64,11 @@ a {
   padding: 1rem 0;
 }
 
-.brand img {
-  height: 60px;
+.brand img,
+.brand svg {
+  height: 72px;
+  width: auto;
+  display: block;
 }
 
 .site-nav {
@@ -131,9 +134,21 @@ a {
 }
 
 .hero-section {
+  position: relative;
   padding: 5rem 0 3rem;
   background: linear-gradient(135deg, rgba(75, 14, 109, 0.96), rgba(227, 28, 37, 0.9));
   color: #ffffff;
+  overflow: hidden;
+}
+
+.hero-section::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: url("images/Company logo.png") center 16% / 90% no-repeat;
+  opacity: 0.28;
+  filter: contrast(1.2) brightness(0.95);
+  pointer-events: none;
 }
 
 .hero-grid {
@@ -511,6 +526,47 @@ a {
 .portfolio-item:hover {
   transform: translateY(-8px) scale(1.02);
   box-shadow: 0 40px 110px rgba(75, 14, 109, 0.14);
+}
+
+.team-section {
+  padding: 4rem 0;
+}
+
+.team-grid {
+  display: grid;
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+  gap: 1.5rem;
+}
+
+.team-card {
+  background: #ffffff;
+  border-radius: 28px;
+  overflow: hidden;
+  box-shadow: 0 30px 90px rgba(75, 14, 109, 0.08);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.team-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 40px 110px rgba(75, 14, 109, 0.12);
+}
+
+.team-card img {
+  width: 100%;
+  aspect-ratio: 4 / 5;
+  object-fit: cover;
+}
+
+.team-copy {
+  padding: 1.25rem 1.5rem;
+  text-align: center;
+  color: var(--surface-2);
+}
+
+.team-copy strong {
+  display: block;
+  font-size: 1rem;
+  letter-spacing: 0.05em;
 }
 
 .testimonials-section {
