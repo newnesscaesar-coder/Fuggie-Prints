@@ -654,6 +654,27 @@ a {
   justify-content: space-between;
   align-items: center;
   gap: 1rem;
+  min-height: 280px;
+  position: relative;
+  overflow: hidden;
+}
+
+.cta-content {
+  position: relative;
+  z-index: 1;
+  flex: 1;
+}
+
+.cta-logo {
+  width: min(78%, 240px);
+  height: auto;
+  max-height: 220px;
+  object-fit: contain;
+  display: block;
+  border-radius: 20px;
+  box-shadow: 0 18px 45px rgba(0, 0, 0, 0.2);
+  position: relative;
+  z-index: 1;
 }
 
 .cta-panel h2 {
@@ -673,6 +694,20 @@ a {
   border-radius: 28px;
   min-height: 420px;
   box-shadow: 0 40px 120px rgba(75, 14, 109, 0.18);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1.5rem;
+  border: 2px solid rgba(255, 255, 255, 0.18);
+}
+
+.about-logo {
+  width: min(92%, 360px);
+  height: auto;
+  object-fit: contain;
+  display: block;
+  border-radius: 24px;
+  filter: drop-shadow(0 12px 30px rgba(0, 0, 0, 0.18));
 }
 
 .about-copy h2 {
