@@ -534,11 +534,14 @@ a {
 
 .team-grid {
   display: grid;
-  grid-template-columns: repeat(5, minmax(0, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
   gap: 1.5rem;
+  align-items: start;
 }
 
 .team-card {
+  display: flex;
+  flex-direction: column;
   background: #ffffff;
   border-radius: 28px;
   overflow: hidden;
@@ -553,8 +556,9 @@ a {
 
 .team-card img {
   width: 100%;
-  aspect-ratio: 4 / 5;
+  height: 260px;
   object-fit: cover;
+  display: block;
 }
 
 .team-copy {
