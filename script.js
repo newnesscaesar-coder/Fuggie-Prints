@@ -4,6 +4,7 @@ const faqItems = document.querySelectorAll(".faq-item");
 const testimonialSlides = document.querySelectorAll(".testimonial-slide");
 const prevButton = document.querySelector(".testimonial-nav.prev");
 const nextButton = document.querySelector(".testimonial-nav.next");
+const contactForm = document.querySelector("#contact-form");
 let testimonialIndex = 0;
 
 if (navToggle && nav) {
@@ -47,5 +48,25 @@ if (testimonialSlides.length) {
     testimonialIndex = (testimonialIndex + 1) % testimonialSlides.length;
     showTestimonial(testimonialIndex);
   }, 6000);
+}
+
+if (contactForm) {
+  contactForm.addEventListener("submit", (event) => {
+    event.preventDefault();
+
+    const name = contactForm.querySelector('input[name="name"]').value.trim();
+    const phone = contactForm.querySelector('input[name="phone"]').value.trim();
+    const email = contactForm.querySelector('input[name="email"]').value.trim();
+    const service = contactForm.querySelector('input[name="service"]').value.trim();
+    const message = contactForm.querySelector('textarea[name="message"]').value.trim();
+
+    const subject = encodeURIComponent(`New inquiry from ${name || "a client"}`);
+    const body = encodeURIComponent(
+      `Name: ${name}\nPhone: ${phone}\nEmail: ${email}\nService Needed: ${service}\n\nMessage:\n${message}`
+    );
+
+    window.location.href = `mailto:newnesscaesar@gmail.com?subject=${subject}&body=${body}`;
+    contactForm.reset();
+  });
 }
 
