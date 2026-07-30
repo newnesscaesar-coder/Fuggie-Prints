@@ -50,23 +50,5 @@ if (testimonialSlides.length) {
   }, 6000);
 }
 
-if (contactForm) {
-  contactForm.addEventListener("submit", (event) => {
-    event.preventDefault();
-
-    const name = contactForm.querySelector('input[name="name"]').value.trim();
-    const phone = contactForm.querySelector('input[name="phone"]').value.trim();
-    const email = contactForm.querySelector('input[name="email"]').value.trim();
-    const service = contactForm.querySelector('input[name="service"]').value.trim();
-    const message = contactForm.querySelector('textarea[name="message"]').value.trim();
-
-    const subject = encodeURIComponent(`New inquiry from ${name || "a client"}`);
-    const body = encodeURIComponent(
-      `Name: ${name}\nPhone: ${phone}\nEmail: ${email}\nService Needed: ${service}\n\nMessage:\n${message}`
-    );
-
-    window.location.href = `mailto:newnesscaesar@gmail.com?subject=${subject}&body=${body}`;
-    contactForm.reset();
-  });
-}
+// No contact form script is needed for direct form submission via FormSubmit.
 
