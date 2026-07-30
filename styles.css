@@ -145,7 +145,7 @@ a {
   content: "";
   position: absolute;
   inset: 0;
-  background: url("images/company-logo.png") center 16% / 90% no-repeat;
+  background: url("./images/company-logo.png") center 16% / 90% no-repeat;
   opacity: 0.28;
   filter: contrast(1.2) brightness(0.95);
   pointer-events: none;
