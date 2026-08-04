@@ -4,529 +4,199 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Fuggie Prints Media</title>
-    <meta
-      name="description"
-      content="Fuggie Prints Media delivers premium printing, branding, and secretarial services across Uganda."
-    />
+    <meta name="description" content="Premium printing, branding, photography, and secretarial services in Uganda." />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&family=Montserrat:wght@600;700;800&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="styles.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&family=Montserrat:wght@600;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/responsive.css" />
   </head>
   <body>
     <header class="site-header">
       <div class="container header-inner">
-        <a href="#top" class="brand" aria-label="Fuggie Prints Media home">
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 420" role="img" aria-labelledby="logoTitle logoDesc">
-            <title id="logoTitle">Fuggie Prints logo</title>
-            <desc id="logoDesc">Red semi-circular arch, black printer with white paper and red F, bold FUGGIE, white PRINTS on black, slogan and lines below.</desc>
-            <path d="M 34 168 A 144 144 0 0 1 286 168" fill="none" stroke="#ff0000" stroke-width="24" stroke-linecap="round"/>
-            <rect x="56" y="132" width="208" height="150" rx="26" fill="#000000"/>
-            <rect x="90" y="62" width="140" height="72" rx="18" fill="#ffffff" stroke="#000000" stroke-width="10"/>
-            <text x="160" y="112" text-anchor="middle" fill="#ff0000" font-family="Poppins, Arial, sans-serif" font-size="54" font-weight="800">F</text>
-            <rect x="76" y="158" width="168" height="76" rx="20" fill="#ffffff"/>
-            <text x="160" y="206" text-anchor="middle" fill="#ff0000" font-family="Poppins, Arial, sans-serif" font-size="34" font-weight="800" letter-spacing="2">FUGGIE</text>
-            <rect x="88" y="224" width="144" height="44" rx="18" fill="#000000"/>
-            <text x="160" y="255" text-anchor="middle" fill="#ffffff" font-family="Poppins, Arial, sans-serif" font-size="26" font-weight="800" letter-spacing="1">PRINTS</text>
-            <rect x="84" y="280" width="152" height="52" rx="16" fill="#ffffff"/>
-            <rect x="100" y="294" width="120" height="8" rx="4" fill="#000000"/>
-            <rect x="100" y="312" width="120" height="8" rx="4" fill="#000000"/>
-            <rect x="100" y="330" width="120" height="8" rx="4" fill="#000000"/>
-            <text x="160" y="366" text-anchor="middle" fill="#000000" font-family="Georgia, serif" font-size="18" font-weight="700" letter-spacing="1.2">YOUR NO 1 CHOICE</text>
-            <rect x="80" y="382" width="160" height="16" rx="8" fill="#000000"/>
-            <rect x="106" y="404" width="108" height="12" rx="6" fill="#ff0000"/>
-          </svg>
+        <a class="brand" href="index.html" aria-label="Fuggie Prints Media home">
+          <img src="images/company-logo.png" alt="Fuggie Prints Media logo" />
         </a>
-        <nav class="site-nav">
-          <a href="#top">Home</a>
-          <a href="#services">Services</a>
-          <a href="#portfolio">Portfolio</a>
-          <a href="#about">About</a>
-          <a href="#testimonials">Testimonials</a>
-          <a href="#contact">Contact</a>
-          <a class="btn btn-nav" href="#contact">Get a Quote</a>
+        <button class="nav-toggle" aria-label="Open navigation" aria-expanded="false">☰</button>
+        <nav class="site-nav" aria-label="Primary navigation">
+          <a href="index.html" data-page="home">Home</a>
+          <a href="pages/about.html" data-page="about">About</a>
+          <a href="pages/services.html" data-page="services">Services</a>
+          <a href="pages/gallery.html" data-page="gallery">Gallery</a>
+          <a href="pages/quote.html" data-page="quote">Request a Quote</a>
+          <a href="pages/contact.html" data-page="contact">Contact</a>
+          <a class="btn btn-nav" href="pages/quote.html">Get a Quote</a>
         </nav>
-        <button class="nav-toggle" aria-label="Open navigation">☰</button>
       </div>
     </header>
 
-    <main id="top">
-      <section class="hero-section">
+    <main>
+      <section class="page-hero">
         <div class="container hero-grid">
           <div class="hero-copy">
             <p class="eyebrow">Premium Printing & Branding</p>
-            <h1>Your No.1 Choice for Professional Printing & Branding</h1>
-            <p>
-              We provide high-quality printing, branding, passport photos, online applications, photography and secretarial services for individuals, schools and businesses across Uganda.
-            </p>
-            <div class="hero-buttons">
-              <a class="btn btn-primary" href="#contact">Get Started</a>
-              <a class="btn btn-secondary" href="#services">View Services</a>
+            <h1>Your trusted partner for professional print and branding solutions.</h1>
+            <p class="lead">Fuggie Prints Media delivers high-quality printing, branding, passport photos, photography, and secretarial support for schools, businesses, and individuals across Uganda.</p>
+            <div class="hero-actions">
+              <a class="btn btn-primary" href="pages/quote.html">Request a Quote</a>
+              <a class="btn btn-secondary" href="pages/services.html">Explore Services</a>
             </div>
           </div>
-          <div class="hero-visual">
-            <div class="hero-glow"></div>
-            <div class="hero-cards">
-              <div class="hero-card hero-card-large">T-shirts</div>
-              <div class="hero-card hero-card-small">Mugs</div>
-              <div class="hero-card hero-card-medium">Caps</div>
-              <div class="hero-card hero-card-small2">Business Cards</div>
-              <div class="hero-card hero-card-small3">Passport Photos</div>
-              <div class="hero-card hero-card-large2">Large Format Printing</div>
-              <div class="hero-card hero-card-printer">Printer</div>
+          <div class="hero-panel">
+            <div class="panel-content">
+              <div>
+                <h2>Fast, polished, and dependable</h2>
+                <p>From branded apparel to business stationery, we create quality outputs that make an impression.</p>
+              </div>
+              <div class="hero-badges">
+                <span>Branded Apparel</span>
+                <span>Business Printing</span>
+                <span>Passport Photos</span>
+                <span>Photography</span>
+              </div>
             </div>
           </div>
         </div>
       </section>
 
-      <section class="trust-section">
-        <div class="container stats-grid">
-          <article class="stat-card">
-            <span>5000+</span>
-            <p>Happy Customers</p>
+      <section class="section" aria-labelledby="about-preview-title">
+        <div class="container intro-grid">
+          <article class="intro-card">
+            <p class="eyebrow">Who We Are</p>
+            <h2 class="section-title" id="about-preview-title">A professional studio built around quality and service.</h2>
+            <p class="lead">We combine modern printing technology with creative branding support to help clients communicate clearly and confidently.</p>
           </article>
-          <article class="stat-card">
-            <span>10+</span>
-            <p>Years Experience</p>
-          </article>
-          <article class="stat-card">
-            <span>50+</span>
-            <p>Business Partners</p>
-          </article>
-          <article class="stat-card">
-            <span>100%</span>
-            <p>Customer Satisfaction</p>
-          </article>
-        </div>
-      </section>
-
-      <section id="services" class="section services-section">
-        <div class="container section-head">
-          <p class="eyebrow">Our Services</p>
-          <h2>What We Do</h2>
-        </div>
-        <div class="container services-grid">
-          <article class="service-card">
-            <div class="service-icon">J</div>
-            <h3>Jersey Numbering</h3>
-            <p>Precision numbering and custom logos for sportswear and uniforms.</p>
-          </article>
-          <article class="service-card">
-            <div class="service-icon">U</div>
-            <h3>Uniform Labelling</h3>
-            <p>Durable labels for schools, businesses and teams.</p>
-          </article>
-          <article class="service-card">
-            <div class="service-icon">P</div>
-            <h3>Printing on Clothes</h3>
-            <p>Custom printing on shirts, hoodies, and fabric merchandise.</p>
-          </article>
-          <article class="service-card">
-            <div class="service-icon">B</div>
-            <h3>Branding Items</h3>
-            <p>Caps, cups, stickers and promotional products.</p>
-          </article>
-          <article class="service-card">
-            <div class="service-icon">P</div>
-            <h3>Passport Photos</h3>
-            <p>Professional passport photo service with fast turnaround.</p>
-          </article>
-          <article class="service-card">
-            <div class="service-icon">O</div>
-            <h3>Photography</h3>
-            <p>Product, portrait and event photography for digital and print.</p>
-          </article>
-          <article class="service-card">
-            <div class="service-icon">E</div>
-            <h3>Photo Editing</h3>
-            <p>Retouching and enhancement for photos and ID images.</p>
-          </article>
-          <article class="service-card">
-            <div class="service-icon">B</div>
-            <h3>Bulk Printing</h3>
-            <p>High-volume printing for flyers, posters and business materials.</p>
-          </article>
-          <article class="service-card">
-            <div class="service-icon">C</div>
-            <h3>Photocopy</h3>
-            <p>Quick, reliable copy service for documents and reports.</p>
-          </article>
-          <article class="service-card">
-            <div class="service-icon">S</div>
-            <h3>Secretarial Work</h3>
-            <p>Document preparation and office support services.</p>
-          </article>
-          <article class="service-card">
-            <div class="service-icon">A</div>
-            <h3>Online Applications</h3>
-            <p>Digital form submission and application assistance.</p>
-          </article>
-          <article class="service-card">
-            <div class="service-icon">ID</div>
-            <h3>ID Duplication</h3>
-            <p>Fast duplicate ID creation for staff and students.</p>
-          </article>
-        </div>
-      </section>
-
-      <section class="split-section">
-        <div class="container split-grid">
-          <div class="split-image">
-            <div class="image-placeholder"></div>
-          </div>
-          <div class="split-copy">
-            <p class="eyebrow">Why Choose Us</p>
-            <h2>Why Fuggie Prints Media?</h2>
-            <ul class="checklist">
-              <li>Fast Delivery</li>
-              <li>Affordable Prices</li>
-              <li>Professional Designers</li>
-              <li>High Quality Prints</li>
-              <li>Modern Equipment</li>
-              <li>Excellent Customer Service</li>
-              <li>Original Designs</li>
-              <li>Licensed Business</li>
+          <article class="intro-card">
+            <ul>
+              <li>Reliable turnaround times for urgent orders</li>
+              <li>Creative support for branding and promotional materials</li>
+              <li>Friendly service for schools, events, businesses, and households</li>
             </ul>
-          </div>
-        </div>
-      </section>
-
-      <section class="products-section">
-        <div class="container section-head">
-          <p class="eyebrow">Featured Products</p>
-          <h2>Products We Deliver</h2>
-        </div>
-        <div class="container products-grid">
-          <article class="product-card-large">
-            <h3>Branded T-Shirts</h3>
-            <p>Custom apparel for teams, events and promotions.</p>
-          </article>
-          <article class="product-card-large">
-            <h3>Corporate Mugs</h3>
-            <p>Branded mugs for corporate gifts and merchandising.</p>
-          </article>
-          <article class="product-card-large">
-            <h3>Caps</h3>
-            <p>Stylish printed and embroidered caps.</p>
-          </article>
-          <article class="product-card-large">
-            <h3>Business Cards</h3>
-            <p>Premium cards that leave a lasting impression.</p>
-          </article>
-          <article class="product-card-large">
-            <h3>Banners</h3>
-            <p>Large format banners for events and retail spaces.</p>
-          </article>
-          <article class="product-card-large">
-            <h3>Pull-up Stands</h3>
-            <p>Portable stands for exhibitions and displays.</p>
-          </article>
-          <article class="product-card-large">
-            <h3>Stickers</h3>
-            <p>Custom labels for packaging, branding and promotions.</p>
-          </article>
-          <article class="product-card-large">
-            <h3>ID Cards</h3>
-            <p>Durable staff and visitor IDs.</p>
-          </article>
-          <article class="product-card-large">
-            <h3>Certificates</h3>
-            <p>Elegant certificates for awards and recognition.</p>
-          </article>
-          <article class="product-card-large">
-            <h3>Flyers</h3>
-            <p>Eye-catching flyers for advertising and events.</p>
           </article>
         </div>
       </section>
 
-      <section class="workflow-section">
-        <div class="container section-head">
-          <p class="eyebrow">How We Work</p>
-          <h2>Four Simple Steps to Your Print Project</h2>
-        </div>
-        <div class="container workflow-grid">
-          <div class="workflow-step">
-            <span>1</span>
-            <h4>Contact Us</h4>
+      <section class="section" aria-labelledby="team-title">
+        <div class="container">
+          <div class="section-header">
+            <p class="eyebrow">Meet the Team</p>
+            <h2 id="team-title">The people behind the work.</h2>
           </div>
-          <div class="workflow-step">
-            <span>2</span>
-            <h4>Design Approval</h4>
-          </div>
-          <div class="workflow-step">
-            <span>3</span>
-            <h4>Printing</h4>
-          </div>
-          <div class="workflow-step">
-            <span>4</span>
-            <h4>Delivery</h4>
-          </div>
-        </div>
-      </section>
-
-      <section id="portfolio" class="portfolio-section">
-        <div class="container section-head">
-          <p class="eyebrow">Portfolio</p>
-          <h2>Our Recent Work</h2>
-        </div>
-        <div class="container portfolio-grid">
-          <div class="portfolio-item">Branded T-shirts</div>
-          <div class="portfolio-item">Flyers</div>
-          <div class="portfolio-item">Business Cards</div>
-          <div class="portfolio-item">Wedding Cards</div>
-          <div class="portfolio-item">Mugs</div>
-          <div class="portfolio-item">Caps</div>
-          <div class="portfolio-item">Roll-up Banners</div>
-          <div class="portfolio-item">Passport Photos</div>
-          <div class="portfolio-item">Certificates</div>
-          <div class="portfolio-item">Outdoor Signage</div>
-        </div>
-      </section>
-
-      <section id="team" class="team-section">
-        <div class="container section-head">
-          <p class="eyebrow">Meet the Team</p>
-          <h2>Meet the Team</h2>
-        </div>
-        <div class="container team-grid">
-          <article class="team-card">
-            <img src="./images/finance-manager.png" alt="Finance Manager" />
-            <div class="team-copy">
-              <strong>Finance Manager</strong>
-            </div>
-          </article>
-          <article class="team-card">
-            <img src="./images/dtf-manager.png" alt="DTF Manager" />
-            <div class="team-copy">
-              <strong>DTF Manager</strong>
-            </div>
-          </article>
-          <article class="team-card">
-            <img src="./images/head-of-marketing-department.png" alt="Head of Marketing Department" />
-            <div class="team-copy">
-              <strong>Head of Marketing Department</strong>
-            </div>
-          </article>
-          <article class="team-card">
-            <img src="./images/ict-manager.png" alt="ICT Manager" />
-            <div class="team-copy">
-              <strong>ICT Manager</strong>
-            </div>
-          </article>
-          <article class="team-card">
-            <img src="./images/permanent-secretary.png" alt="Permanent Secretary" />
-            <div class="team-copy">
-              <strong>Permanent Secretary</strong>
-            </div>
-          </article>
-        </div>
-      </section>
-
-      <section id="testimonials" class="testimonials-section">
-        <div class="container section-head white-head">
-          <p class="eyebrow">Testimonials</p>
-          <h2>What Our Clients Say</h2>
-        </div>
-        <div class="container testimonial-panel">
-          <button class="testimonial-nav prev" aria-label="Previous testimonial">←</button>
-          <div class="testimonial-slider">
-            <article class="testimonial-slide active">
-              <p class="quote">"Excellent customer service and outstanding print quality."</p>
-              <div class="testimonial-meta">
-                <div class="testimonial-avatar"></div>
-                <div>
-                  <strong>Maria N.</strong>
-                  <span>Event Organizer</span>
-                </div>
+          <div class="team-grid">
+            <article class="team-card">
+              <img src="images/finance-manager.png" alt="Finance Manager" loading="lazy" />
+              <div class="content">
+                <h3>Finance Manager</h3>
+                <p>Overseeing clear planning and dependable service delivery.</p>
               </div>
             </article>
-            <article class="testimonial-slide">
-              <p class="quote">"Fast turnaround and the designs were very professional."</p>
-              <div class="testimonial-meta">
-                <div class="testimonial-avatar"></div>
-                <div>
-                  <strong>Paul K.</strong>
-                  <span>School Admin</span>
-                </div>
+            <article class="team-card">
+              <img src="images/dtf-manager.png" alt="DTF Manager" loading="lazy" />
+              <div class="content">
+                <h3>DTF Manager</h3>
+                <p>Leading creative production and print execution.</p>
               </div>
             </article>
-            <article class="testimonial-slide">
-              <p class="quote">"The team made the whole process easy and the final products looked premium."</p>
-              <div class="testimonial-meta">
-                <div class="testimonial-avatar"></div>
-                <div>
-                  <strong>Grace T.</strong>
-                  <span>Small Business Owner</span>
-                </div>
+            <article class="team-card">
+              <img src="images/head-of-marketing-department.png" alt="Head of Marketing Department" loading="lazy" />
+              <div class="content">
+                <h3>Head of Marketing</h3>
+                <p>Supporting branding strategy and client communication.</p>
+              </div>
+            </article>
+            <article class="team-card">
+              <img src="images/ict-manager.png" alt="ICT Manager" loading="lazy" />
+              <div class="content">
+                <h3>ICT Manager</h3>
+                <p>Managing digital workflows and reliable technology support.</p>
+              </div>
+            </article>
+            <article class="team-card">
+              <img src="images/permanent-secretary.png" alt="Permanent Secretary" loading="lazy" />
+              <div class="content">
+                <h3>Permanent Secretary</h3>
+                <p>Ensuring professionalism, organization, and seamless operations.</p>
               </div>
             </article>
           </div>
-          <button class="testimonial-nav next" aria-label="Next testimonial">→</button>
         </div>
       </section>
 
-      <section class="cta-section">
+      <section class="section" aria-labelledby="feature-title">
+        <div class="container">
+          <div class="section-header">
+            <p class="eyebrow">Featured Services</p>
+            <h2 id="feature-title">Professional solutions for every stage of your brand.</h2>
+          </div>
+          <div class="feature-grid">
+            <article class="feature-card">
+              <div class="icon">🖨️</div>
+              <h3>Custom Printing</h3>
+              <p>Flyers, banners, business cards, certificates, and large-format materials with crisp finish.</p>
+            </article>
+            <article class="feature-card">
+              <div class="icon">🎨</div>
+              <h3>Branding & Apparel</h3>
+              <p>Branded t-shirts, caps, mugs, stickers, and promotional products that reflect your identity.</p>
+            </article>
+            <article class="feature-card">
+              <div class="icon">📸</div>
+              <h3>Photography & Editing</h3>
+              <p>Portrait, product, and event photography with quick turnaround and polished retouching.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
         <div class="container cta-panel">
-          <div class="cta-content">
-            <p class="eyebrow">Ready to Print</p>
-            <h2>Ready to Print Something Amazing?</h2>
+          <div>
+            <p class="eyebrow">Ready to Begin?</p>
+            <h2>Bring your next project to life with a team that cares about quality.</h2>
           </div>
-          <img class="cta-logo" src="./images/company-logo.png" alt="Fuggie Prints company logo" />
-          <a class="btn btn-primary" href="#contact">Request a Quote</a>
-        </div>
-      </section>
-
-      <section class="about-section" id="about">
-        <div class="container split-grid">
-          <div class="about-image">
-            <img src="./images/company-logo.png" alt="Fuggie Prints company logo" class="about-logo" />
-          </div>
-          <div class="about-copy">
-            <p class="eyebrow">About Us</p>
-            <h2>About Fuggie Prints Media</h2>
-            <p>Fuggie Prints Media is a professional printing and branding company committed to delivering high-quality printing services, branding solutions, photography, passport photos, online applications, and secretarial work. We focus on quality, speed, and customer satisfaction.</p>
-          </div>
-        </div>
-      </section>
-
-      <section class="faq-section">
-        <div class="container section-head">
-          <p class="eyebrow">FAQ</p>
-          <h2>Frequently Asked Questions</h2>
-        </div>
-        <div class="container faq-grid">
-          <div class="faq-item">
-            <button type="button">How long does printing take?</button>
-            <div class="faq-answer">Most projects are completed within 1-3 business days depending on quantity and complexity.</div>
-          </div>
-          <div class="faq-item">
-            <button type="button">Do you offer same-day passport photos?</button>
-            <div class="faq-answer">Yes, passport photos are available same-day with fast processing.</div>
-          </div>
-          <div class="faq-item">
-            <button type="button">Can I order online?</button>
-            <div class="faq-answer">Yes, we accept online inquiries and can prepare quotes through email or WhatsApp.</div>
-          </div>
-          <div class="faq-item">
-            <button type="button">Do you deliver?</button>
-            <div class="faq-answer">We offer delivery services for local orders within Kampala.</div>
-          </div>
-          <div class="faq-item">
-            <button type="button">What file formats do you accept?</button>
-            <div class="faq-answer">We accept PDF, JPEG, PNG, PSD and AI files for print-ready artwork.</div>
-          </div>
-        </div>
-      </section>
-
-      <section id="contact" class="contact-section">
-        <div class="container contact-grid">
-          <div class="contact-card">
-            <p class="eyebrow">Contact</p>
-            <h2>Get In Touch</h2>
-            <div class="contact-info-list">
-              <div>
-                <strong>Location</strong>
-                <p>Nakawa Market</p>
-                <p>Opposite KCCA Toilets</p>
-              </div>
-              <div>
-                <strong>Phone</strong>
-                <p>0785 243828</p>
-                <p>0741 095334</p>
-                <p>0757 350304</p>
-                <p>0791 085159</p>
-              </div>
-              <div>
-                <strong>Email</strong>
-                <p><a href="mailto:info@fuggieprints.com">info@fuggieprints.com</a></p>
-              </div>
-              <div>
-                <strong>Working Hours</strong>
-                <p>Monday – Saturday</p>
-                <p>8:00 AM – 7:00 PM</p>
-              </div>
-            </div>
-          </div>
-          <form class="contact-form" id="contact-form" action="https://formsubmit.co/newnesscaesar@gmail.com" method="POST">
-            <input type="hidden" name="_subject" value="New inquiry from Fuggie Prints website" />
-            <input type="hidden" name="_captcha" value="false" />
-            <input type="hidden" name="_next" value="https://newnesscaesar-coder.github.io/Fuggie-Prints/#contact" />
-            <div class="form-row">
-              <input type="text" name="name" placeholder="Name" required />
-              <input type="text" name="phone" placeholder="Phone" required />
-            </div>
-            <div class="form-row">
-              <input type="email" name="email" placeholder="Email" required />
-              <input type="text" name="service" placeholder="Service Needed" required />
-            </div>
-            <textarea rows="5" name="message" placeholder="Message"></textarea>
-            <button type="submit" class="btn btn-primary">Submit</button>
-          </form>
-        </div>
-      </section>
-
-      <section class="map-section">
-        <div class="container map-embed">
-          <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3971.808188505454!2d32.61967817513024!3d0.3473135422203928!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x177db42f5e722483%3A0xf938d5c3dbf4a207!2sNakawa%20Market!5e0!3m2!1sen!2sug!4v1700000000000"
-            allowfullscreen=""
-            loading="lazy"
-            referrerpolicy="no-referrer-when-downgrade"
-          ></iframe>
+          <a class="btn btn-primary" href="pages/quote.html">Start Your Quote</a>
         </div>
       </section>
     </main>
 
     <footer class="site-footer">
       <div class="container footer-grid">
-        <div class="footer-col">
-          <img src="logo.svg" alt="Fuggie Prints Media logo" class="footer-logo" />
-          <p>Fuggie Prints Media delivers premium printing and branding solutions across Uganda with speed, quality and style.</p>
+        <div>
+          <h4>Fuggie Prints Media</h4>
+          <p>Reliable printing, branding, photography, and administrative support for modern businesses.</p>
         </div>
-        <div class="footer-col">
+        <div>
           <h4>Quick Links</h4>
           <ul>
-            <li><a href="#top">Home</a></li>
-            <li><a href="#services">Services</a></li>
-            <li><a href="#portfolio">Portfolio</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#contact">Contact</a></li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="pages/about.html">About</a></li>
+            <li><a href="pages/services.html">Services</a></li>
+            <li><a href="pages/gallery.html">Gallery</a></li>
           </ul>
         </div>
-        <div class="footer-col">
-          <h4>Services</h4>
-          <ul>
-            <li>Printing</li>
-            <li>Branding</li>
-            <li>Photography</li>
-            <li>Passport Photos</li>
-            <li>Online Applications</li>
-            <li>Secretarial Work</li>
-          </ul>
-        </div>
-        <div class="footer-col">
+        <div>
           <h4>Contact</h4>
-          <p>0785 243828</p>
-          <p>0741 095334</p>
-          <p><a href="mailto:info@fuggieprints.com">info@fuggieprints.com</a></p>
-          <p>Nakawa Market, Opposite KCCA Toilets</p>
+          <ul>
+            <li>0785 243828</li>
+            <li>info@fuggieprints.com</li>
+            <li>Nakawa Market, Kampala</li>
+          </ul>
+        </div>
+        <div>
+          <h4>Follow</h4>
           <div class="social-links">
-            <a href="#">Facebook</a>
-            <a href="#">Instagram</a>
-            <a href="#">TikTok</a>
-            <a href="#">WhatsApp</a>
+            <a href="https://www.facebook.com" target="_blank" rel="noreferrer">Facebook</a>
+            <a href="https://www.instagram.com" target="_blank" rel="noreferrer">Instagram</a>
+            <a href="https://wa.me/256785243828" target="_blank" rel="noreferrer">WhatsApp</a>
           </div>
         </div>
       </div>
       <div class="container footer-bottom">
-        <p>© <span id="year">2026</span> Fuggie Prints Media. All Rights Reserved.</p>
+        <p>© 2026 Fuggie Prints Media. All rights reserved.</p>
       </div>
     </footer>
 
-    <script src="script.js"></script>
+    <button class="back-to-top" aria-label="Back to top">↑</button>
+    <script src="js/script.js"></script>
   </body>
 </html>
