@@ -1,0 +1,12 @@
+{
+  "name": "Fuggie Prints",
+  "short_name": "Fuggie Prints",
+  "description": "Printing, branding, photography and quick ordering from Fuggie Prints.",
+  "start_url": "./",
+  "display": "standalone",
+  "background_color": "#f6f2fb",
+  "theme_color": "#4b0e6d",
+  "icons": [
+    { "src": "../images/fuggie-prints-logo.png", "sizes": "any", "type": "image/png", "purpose": "any maskable" }
+  ]
+}

@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#4b0e6d">
+  <meta name="description" content="Fuggie Prints: printing, branding and quick contact.">
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="icon" type="image/png" href="../images/fuggie-prints-logo.png">
+  <link rel="apple-touch-icon" href="../images/fuggie-prints-logo.png">
+  <title>Fuggie Prints</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700;800&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="app.css">
+</head>
+<body>
+  <header class="app-header">
+    <a class="brand" href="#home" aria-label="Fuggie Prints home"><img src="../images/fuggie-prints-logo.png" alt="Fuggie Prints"></a>
+    <a class="header-contact" href="https://wa.me/256788962748" target="_blank" rel="noopener">Contact us</a>
+  </header>
+
+  <main id="home">
+    <section class="hero">
+      <p class="eyebrow">PRINT • BRAND • CREATE</p>
+      <h1>Bring your next idea to life.</h1>
+      <p>Request quality printing, branding, photography and business support directly from Fuggie Prints.</p>
+      <div class="hero-actions">
+        <a class="primary-button" href="#quick-order">Start an order</a>
+        <button class="install-button" type="button" id="install-app" hidden>Install app</button>
+      </div>
+    </section>
+
+    <section class="quick-widget" aria-labelledby="widget-title">
+      <div>
+        <span class="widget-dot"></span>
+        <p class="eyebrow">Quick contact widget</p>
+        <h2 id="widget-title">Need help with an order?</h2>
+        <p>Message us in WhatsApp or send an email in one tap.</p>
+      </div>
+      <div class="widget-actions">
+        <a class="whatsapp-button shake" href="https://wa.me/256788962748" target="_blank" rel="noopener" aria-label="Contact Fuggie Prints on WhatsApp">
+          <svg viewBox="0 0 32 32" aria-hidden="true"><path d="M19.1 17.1c-.2-.1-1.4-.7-1.6-.8-.2-.1-.4-.1-.6.1-.2.2-.6.8-.8 1-.1.2-.3.2-.5.1-1.3-.6-2.2-1.2-3.1-2.7-.2-.3.2-.3.6-1.1.1-.2.1-.4 0-.5-.1-.1-.6-1.3-.8-1.8-.2-.5-.4-.4-.6-.4h-.5c-.2 0-.5.1-.7.4-.2.2-.9.9-.9 2.2s.9 2.5 1 2.7c.1.2 1.8 2.8 4.5 3.9.6.3 1.1.4 1.5.5.6.2 1.2.1 1.6.1.5-.1 1.4-.6 1.6-1.2.2-.6.2-1.1.1-1.2-.1-.2-.2-.2-.5-.3zM16 3C8.8 3 3 8.8 3 16c0 2.3.6 4.5 1.8 6.4L3 29l6.8-1.8A13 13 0 1 0 16 3zm0 23.6c-2 0-3.9-.5-5.6-1.5l-.4-.2-4 .9.9-3.9-.3-.4a10.6 10.6 0 1 1 9.4 5.1z"/></svg>
+          Contact us
+        </a>
+        <a class="email-button" href="mailto:fuggieprintsmedia@gmail.com?subject=Fuggie%20Prints%20enquiry">Email us</a>
+      </div>
+    </section>
+
+    <section class="services" aria-labelledby="services-title">
+      <div class="section-heading"><p class="eyebrow">What we do</p><h2 id="services-title">Everything your brand needs to stand out.</h2></div>
+      <div class="service-grid">
+        <article><span>🖨️</span><h3>Printing</h3><p>Cards, flyers, banners, certificates and more.</p></article>
+        <article><span>🎨</span><h3>Branding</h3><p>Apparel, merchandise and memorable brand materials.</p></article>
+        <article><span>📸</span><h3>Photography</h3><p>Passport, portrait, product and event photography.</p></article>
+      </div>
+    </section>
+
+    <section class="order-card" id="quick-order" aria-labelledby="order-title">
+      <p class="eyebrow">Quick order</p>
+      <h2 id="order-title">Tell us what you need.</h2>
+      <form id="order-form">
+        <label>Your name<input name="name" required autocomplete="name" placeholder="Your name"></label>
+        <label>Service<select name="service"><option>Printing</option><option>Branding</option><option>Photography</option><option>Other</option></select></label>
+        <label class="full-width">Project details<textarea name="details" required placeholder="What would you like us to make?"></textarea></label>
+        <button class="primary-button full-width" type="submit">Send order on WhatsApp</button>
+      </form>
+    </section>
+
+    <section class="notifications" aria-labelledby="notifications-title">
+      <p class="eyebrow">Stay updated</p>
+      <h2 id="notifications-title">Receive two helpful reminders each day.</h2>
+      <p>Choose your times, then allow notifications. Your choices are stored on this device.</p>
+      <div class="notification-controls">
+        <label>Morning<input id="morning-time" type="time" value="09:00"></label>
+        <label>Evening<input id="evening-time" type="time" value="18:00"></label>
+        <button id="enable-notifications" class="secondary-button" type="button">Enable notifications</button>
+      </div>
+      <p class="notice" id="notification-status" aria-live="polite">Notifications are not enabled yet.</p>
+    </section>
+  </main>
+
+  <footer>© 2026 Fuggie Prints Media</footer>
+  <a class="floating-whatsapp shake" href="https://wa.me/256788962748" target="_blank" rel="noopener" aria-label="Contact us on WhatsApp">☎ <span>Contact us</span></a>
+  <script src="app.js"></script>
+</body>
+</html>
